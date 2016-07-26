@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "rm -rf dest && webpack",
-    "test": "karma start ./karma.conf.js --single-run",
+    "test": "karma start ./karma.conf.js --single-run=false --debug",
     "validate": "eslint ."
   },
   "author": {
@@ -33,6 +33,7 @@
     "isparta-loader": "^0.2.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.3",
+    "karma-chrome-launcher": "^1.0.1",
     "karma-coverage": "^0.4.2",
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.0",
